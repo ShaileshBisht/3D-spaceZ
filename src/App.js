@@ -23,7 +23,7 @@ function App() {
             shadow-bias={-0.0001}
           />
 
-          <Stars radius={500} depth={10} count={1000} factor={10} />
+          <Stars radius={500} depth={10} count={1100} factor={10} />
           <Model />
 
           <OrbitControls
