@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars, Loader } from "@react-three/drei";
 
 import Model from "./Model";
@@ -24,7 +24,9 @@ function App() {
           />
 
           <Stars radius={500} depth={10} count={1100} factor={10} />
-          <Model />
+          <Suspense fallback={<Loader />}>
+            <Model />
+          </Suspense>
 
           <OrbitControls
             autoRotate={false}
@@ -33,7 +35,6 @@ function App() {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
           />
-          <Loader />
         </Canvas>
       </div>
 
