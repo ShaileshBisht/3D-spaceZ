@@ -1,9 +1,10 @@
 import "./App.css";
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
+import { OrbitControls, Stars, Plane } from "@react-three/drei";
 
 import Model from "./Model";
+import RoverSection from "./RoverSection";
 import SpaceCarrier from "./SpaceCarrier";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <h1>SpaceZ</h1>
       </div>
       <SpaceCarrier />
+      <RoverSection />
     </div>
   );
 }

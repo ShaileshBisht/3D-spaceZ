@@ -5,12 +5,12 @@
 
 .spaceCarrier_title > h1 {
   color: peru;
-  margin: 0 auto;
+  margin: 40px auto;
   text-decoration: underline;
   letter-spacing: 1px;
   font-size: 4rem;
   width: max-content;
-  padding: 30px 20px;
+  padding: 30px 50px;
 }
 .spaceCarrier_flex {
   display: flex;
