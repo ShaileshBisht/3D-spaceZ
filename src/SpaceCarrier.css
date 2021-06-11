@@ -1,0 +1,42 @@
+.spaceCarrier {
+  position: relative;
+  width: 100%;
+}
+
+.spaceCarrier_title > h1 {
+  color: peru;
+  margin: 0 auto;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-size: 4rem;
+  width: max-content;
+  padding: 30px 20px;
+}
+.spaceCarrier_flex {
+  display: flex;
+  max-height: 300px;
+  padding: 20px;
+}
+
+.spaceCarrier_left {
+  padding: 10px;
+  flex: 0.5;
+}
+
+.spaceCarrier_left > p {
+  font-weight: 500;
+  text-align: justify;
+
+  font-size: 1.2rem;
+}
+
+.spaceCarrier_right {
+  background: radial-gradient(
+    at 50% 100%,
+    #873740 0%,
+    #272730 40%,
+    #171720 80%,
+    #070710 100%
+  );
+  flex: 0.5;
+}

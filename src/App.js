@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stars, Loader } from "@react-three/drei";
+import { OrbitControls, Stars } from "@react-three/drei";
 
 import Model from "./Model";
 import SpaceCarrier from "./SpaceCarrier";
