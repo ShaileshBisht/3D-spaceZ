@@ -4,6 +4,7 @@
 }
 
 .spaceCarrier_title > h1 {
+  width: 100%;
   color: peru;
   margin: 40px auto;
   text-decoration: underline;
@@ -14,13 +15,15 @@
 }
 .spaceCarrier_flex {
   display: flex;
-  max-height: 300px;
+  justify-content: space-evenly;
+  max-height: 500px;
   padding: 20px;
 }
 
 .spaceCarrier_left {
+  width: 50%;
   padding: 10px;
-  flex: 0.5;
+  overflow-y: scroll;
 }
 
 .spaceCarrier_left > p {
@@ -31,6 +34,7 @@
 }
 
 .spaceCarrier_right {
+  width: 50%;
   background: radial-gradient(
     at 50% 100%,
     #873740 0%,
@@ -38,5 +42,25 @@
     #171720 80%,
     #070710 100%
   );
-  flex: 0.5;
+}
+
+@media only screen and (max-width: 1100px) {
+  .spaceCarrier_flex {
+    flex-direction: column;
+    max-height: 100vh;
+    padding: 0;
+  }
+  .spaceCarrier_left {
+    width: 100%;
+    padding: 10px;
+    overflow-y: unset;
+  }
+
+  .spaceCarrier_right {
+    width: 100%;
+  }
+  .spaceCarrier_title > h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
 }

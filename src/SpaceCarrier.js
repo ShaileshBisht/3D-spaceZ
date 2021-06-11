@@ -24,8 +24,7 @@ function SpaceCarrier() {
             suscipit quod, et laudantium atque quidem reiciendis cupiditate
             aperiam itaque ea sit est aliquid ipsam adipisci dolores veritatis
             doloribus ex necessitatibus recusandae. Aperiam inventore saepe
-            adipisci, placeat harum quaerat autem earum voluptas quasi libero
-            ipsam omnis labore ut repudiandae eligendi quis vero.
+            adipisci
           </p>
         </div>
         <div className="spaceCarrier_right">

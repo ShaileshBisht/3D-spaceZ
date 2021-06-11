@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.app {
+  width: 100%;
+}
+
 .hero_section {
   width: 100%;
   background: radial-gradient(
