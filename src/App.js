@@ -24,7 +24,7 @@ function App() {
           />
 
           <Stars radius={500} depth={10} count={1100} factor={10} />
-          <Suspense fallback={<Loader />}>
+          <Suspense fallback={null}>
             <Model />
           </Suspense>
 
