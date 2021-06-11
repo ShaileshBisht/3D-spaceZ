@@ -12,7 +12,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/scene.gltf");
+  const { nodes } = useGLTF("/scene.gltf");
 
   useFrame(({ mouse }) => {
     group.current.rotation.y += 0.005;

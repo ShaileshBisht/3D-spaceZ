@@ -29,7 +29,7 @@ function SpaceCarrier() {
           </p>
         </div>
         <div className="spaceCarrier_right">
-          <Canvas camera={{ position: [0, 0, 120], fov: 75 }}>
+          <Canvas camera={{ position: [0, 50, 120], fov: 75 }}>
             <Stars radius={500} depth={10} count={1100} factor={1} />
             <ambientLight intensity={1} />
             <pointLight intensity={1} position={[-10, -25, 0]} />

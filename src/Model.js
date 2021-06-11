@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 // import { Loader } from "@react-three/drei";
 
 import Scene from "./Scene";
