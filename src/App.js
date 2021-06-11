@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars, Loader } from "@react-three/drei";
 
 import Model from "./Model";
+import SpaceCarrier from "./SpaceCarrier";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
 
           <OrbitControls
             autoRotate={false}
-            enablePan={false}
+            enablePan={true}
+            enableDamping={true}
             enableZoom={false}
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
@@ -41,6 +43,7 @@ function App() {
       <div className="hero_data">
         <h1>SpaceZ</h1>
       </div>
+      <SpaceCarrier />
     </div>
   );
 }

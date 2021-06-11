@@ -16,14 +16,18 @@ export default function Model(props) {
 
   useFrame(({ mouse }) => {
     group.current.rotation.y += 0.005;
-    group.current.position.x = mouse.x * 1.5;
+    group.current.position.x = -mouse.x * 1.5;
     group.current.position.y = -mouse.y * 1.5;
   });
 
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
-        <group position={[0, 0, -1]} rotation={[0.24, -0.5, 0.56]} scale={5.5}>
+        <group
+          position={[-1, -4, -2]}
+          rotation={[0.24, -0.5, 0.56]}
+          scale={5.5}
+        >
           <mesh
             geometry={nodes.planet001_1.geometry}
             material={nodes.planet001_1.material}
