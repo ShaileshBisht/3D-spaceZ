@@ -7,11 +7,17 @@ title: Little Planet
 */
 
 import React, { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/planet.gltf");
+
+  useFrame(({ mouse }) => {
+    group.current.rotation.y += 0.005;
+  });
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={2}>

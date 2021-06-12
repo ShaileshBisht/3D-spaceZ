@@ -26,7 +26,7 @@ export default function Model(props) {
         <group
           position={[-1, -4, -2]}
           rotation={[0.24, -0.5, 0.56]}
-          scale={5.5}
+          scale={4.5}
         >
           <mesh
             geometry={nodes.planet001_1.geometry}
