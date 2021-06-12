@@ -3,16 +3,34 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 
 import "./PlanetDiscovery.css";
-import Carrier from "./Carrier";
+import Planet from "./Planet";
 
 function PlanetDiscovery() {
   return (
     <div className="planetDiscovery">
       <div className="planetDiscovery_title">
-        <h1>Our Carrier</h1>
+        <h1>Discover New Planet</h1>
       </div>
       <div className="planetDiscovery_flex">
         <div className="planetDiscovery_left">
+          <Canvas camera={{ position: [0, 30, 30], fov: 75 }}>
+            <Stars radius={500} depth={10} count={1100} factor={1} />
+            <ambientLight intensity={0.3} />
+            <directionalLight
+              intensity={1}
+              angle={0.2}
+              penumbra={1}
+              position={[0, 20, 0]}
+              shadow-mapSize={[1024, 1024]}
+            />
+            <Suspense fallback={null}>
+              <Planet />
+            </Suspense>
+
+            <OrbitControls autoRotate={false} enableZoom={false} />
+          </Canvas>
+        </div>
+        <div className="planetDiscovery_right">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
             explicabo nulla quam odio voluptate accusantium debitis a
@@ -26,26 +44,6 @@ function PlanetDiscovery() {
             doloribus ex necessitatibus recusandae. Aperiam inventore saepe
             adipisci
           </p>
-        </div>
-        <div className="planetDiscovery_right">
-          <Canvas camera={{ position: [0, 50, 120], fov: 75 }}>
-            <Stars radius={500} depth={10} count={1100} factor={1} />
-            <ambientLight intensity={1} />
-            <pointLight intensity={1} position={[-10, -25, 0]} />
-            <pointLight intensity={1} position={[-10, 25, 0]} />
-            <directionalLight
-              intensity={2}
-              angle={0.2}
-              penumbra={1}
-              position={[0, 20, 0]}
-              shadow-mapSize={[1024, 1024]}
-            />
-            <Suspense fallback={null}>
-              <Carrier />
-            </Suspense>
-
-            <OrbitControls autoRotate={true} enableZoom={false} />
-          </Canvas>
         </div>
       </div>
     </div>
