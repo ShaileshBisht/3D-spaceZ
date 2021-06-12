@@ -1,0 +1,30 @@
+.externalColony {
+  margin-top: 80px;
+  width: 100%;
+  background: radial-gradient(
+    at 50% 100%,
+    #873740 0%,
+    #272730 40%,
+    #171720 80%,
+    #070710 100%
+  );
+  height: 100vh;
+}
+
+.externalColony_tool {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  font-size: 6rem;
+  color: peru;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .externalColony_tool {
+    font-size: 2rem;
+  }
+}
