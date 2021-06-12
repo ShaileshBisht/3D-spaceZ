@@ -19,6 +19,7 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   font-size: 6rem;
   color: peru;
+  text-align: center;
   font-weight: 900;
   letter-spacing: 10px;
 }

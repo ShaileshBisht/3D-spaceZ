@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stars, Html } from "@react-three/drei";
+import { OrbitControls, Html } from "@react-three/drei";
 
 import "./RoverSection.css";
 import RoverModel from "./RoverModel";

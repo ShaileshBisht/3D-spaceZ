@@ -13,7 +13,7 @@ function PlanetDiscovery() {
       </div>
       <div className="planetDiscovery_flex">
         <div className="planetDiscovery_left">
-          <Canvas camera={{ position: [0, 30, 30], fov: 75 }}>
+          <Canvas camera={{ position: [0, 10, 40], fov: 75 }}>
             <Stars radius={500} depth={10} count={1100} factor={1} />
             <ambientLight intensity={0.3} />
             <directionalLight

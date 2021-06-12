@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stars, Html } from "@react-three/drei";
+import { OrbitControls, Html } from "@react-three/drei";
 
 import "./ExternalColony.css";
 import Colony from "./Colony";
@@ -31,8 +31,8 @@ function ExternalColony() {
           <Colony />
         </Suspense>
         <Html center>
-          <p className="externalColony_tool">PLANET</p>
-          <p className="externalColony_tool">ROVER</p>
+          <p className="externalColony_tool">COLONIZATION</p>
+          <p className="externalColony_tool">CAMP</p>
         </Html>
 
         <OrbitControls
