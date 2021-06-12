@@ -14,10 +14,10 @@ export default function Model(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/rover.gltf");
 
-  useFrame(({ mouse }) => {
-    group.current.position.x = -mouse.x * 100.5;
-    group.current.position.y = -mouse.y * 100.5;
-  });
+  // useFrame(({ mouse }) => {
+  //   group.current.position.x = -mouse.x * 100.5;
+  //   group.current.position.y = -mouse.y * 100.5;
+  // });
 
   return (
     <group ref={group} {...props} dispose={null}>
