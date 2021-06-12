@@ -23,7 +23,6 @@
 .spaceCarrier_left {
   width: 50%;
   padding: 10px;
-  overflow-y: scroll;
 }
 
 .spaceCarrier_left > p {
