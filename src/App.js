@@ -7,6 +7,7 @@ import Model from "./Model";
 import RoverSection from "./RoverSection";
 import SpaceCarrier from "./SpaceCarrier";
 import PlanetDiscovery from "./PlanetDiscovery";
+import ExternalColony from "./ExternalColony";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
       <SpaceCarrier />
       <RoverSection />
       <PlanetDiscovery />
+      <ExternalColony />
     </div>
   );
 }
