@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Html } from "@react-three/drei";
+import { OrbitControls, Html, Stars } from "@react-three/drei";
 
 import "./ExternalColony.css";
 import Colony from "./Colony";
@@ -10,6 +10,7 @@ function ExternalColony() {
     <div className="externalColony">
       <Canvas camera={{ position: [0, 10, 20], fov: 75 }}>
         <ambientLight intensity={0.5} />
+        <Stars />
         <directionalLight
           intensity={2}
           angle={0.2}

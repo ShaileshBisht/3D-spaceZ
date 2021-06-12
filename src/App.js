@@ -27,7 +27,7 @@ function App() {
             shadow-bias={-0.0001}
           />
 
-          <Stars radius={500} depth={10} count={1100} factor={10} />
+          <Stars radius={500} depth={10} count={2000} factor={15} />
           <Suspense fallback={null}>
             <Model />
           </Suspense>
